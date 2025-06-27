@@ -40,3 +40,8 @@ The board was designed with [KiCad](https://kicad.org/) EDA.
 | R2                     |  1  | 1M / 0805                                               |                                                                      |
 | R3                     |  1  | 47K / 0805                                              |                                                                      |
 | J1                     |  2  | 8pin machined headers, 2.54mm pitch                     | Mount on the underside                                               |
+
+### Ordering the boards
+
+You can order the board for this project at [PCBWay](https://www.pcbway.com/project/shareproject/PLACEHOLDER) and support me or download 
+the gerbers and have them printed wherever you like!!!
