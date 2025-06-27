@@ -17,7 +17,6 @@ Tweaking the cap and bodging a resistor on the NullCIC alleviated the issue by a
 a bit more reliably, and went with a classic 555 circuit.
 
 ![Rev. 1 render](pics/board_render.jpg)
-
 ![Rev. 0 assembled](pics/rev0_assembled.jpg)
 
 ## Hardware
