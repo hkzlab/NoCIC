@@ -16,6 +16,8 @@ a cold boot, and required a manual reset (possibly related to timing of my speci
 Tweaking the cap and bodging a resistor on the NullCIC alleviated the issue by a lot, but I decided to go with something that allowed me to control the reset timing
 a bit more reliably, and went with a classic 555 circuit.
 
+The value for the components in the BOM should provide around 500ms of time in reset at startup.
+
 ![Rev. 1 render](pics/board_render.jpg)
 ![Rev. 0 assembled](pics/rev0_assembled.jpg)
 
