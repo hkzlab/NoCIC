@@ -1,2 +1,41 @@
 # NoCIC
 
+## DISCLAIMER
+
+Any use of this project is **under your own responsibility**.
+You will be responsible of checking the correct construction and functionality of your board.
+By using this project You will agree that I cannot be held responsible if it will destroy any of your devices, damage your computer, burn down your house or whatever.
+
+## Introduction
+
+This is a replacement of the NES CIC IC that implements the reset functionality, fits in a DIP16 footprint and... nothing else.
+
+The [NullCIC](https://github.com/Redherring32/NullCIC/) already does this, but I faced some issues with it where the NES sometimes failed to startup properly during
+a cold boot, and required a manual reset (possibly related to timing of my specific motherboard, even though the issues were not present with an original CIC installed).
+
+Tweaking the cap and bodging a resistor on the NullCIC alleviated the issue by a lot, but I decided to go with something that allowed me to control the reset timing
+a bit more reliably, and went with a classic 555 circuit.
+
+![Rev. 1 render](pics/board_render.jpg)
+
+![Rev. 0 assembled](pics/rev0_assembled.jpg)
+
+## Hardware
+
+The board was designed with [KiCad](https://kicad.org/) EDA.
+
+### Bill of Materials
+
+| Component              | Qty | Type / Value                                            | Notes                                                                |
+| ---------------------- | --- | ------------------------------------------------------- | -------------------------------------------------------------------- |
+| U1                     |  1  | 74LVC1G06 / SOT-23-5                                    |                                                                      |
+| U3                     |  1  | 555, CMOS, SOIC-8                                       |                                                                      |
+| U3                     |  1  | 74LVC1G04 / SOT-23-5                                    |                                                                      |
+| C1, C4                 |  2  | 100nF / 16V+ / 0805                                     | MLCC                                                                 |
+| C2                     |  1  | 10nF / 16V+ / 0805                                      | MLCC                                                                 |
+| C3                     |  1  | 10uF / 16V+ / 0805                                      | MLCC                                                                 |
+| C5                     |  1  | 470nF / 16V+ / 0805                                     | MLCC                                                                 |
+| R1                     |  1  | 10K / 0805                                              |                                                                      |
+| R2                     |  1  | 1M / 0805                                               |                                                                      |
+| R3                     |  1  | 47K / 0805                                              |                                                                      |
+| J1                     |  2  | 8pin machined headers, 2.54mm pitch                     | Mount on the underside                                               |
