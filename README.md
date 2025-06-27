@@ -21,6 +21,8 @@ The values for the components in the BOM should provide around 500ms of time in 
 ![Rev. 1 render](pics/board_render.jpg)
 ![Rev. 0 assembled](pics/rev0_assembled.jpg)
 
+This board was tested with two of my NES units without issues, let me know if it works for you!
+
 ## Hardware
 
 The board was designed with [KiCad](https://kicad.org/) EDA.
@@ -43,5 +45,5 @@ The board was designed with [KiCad](https://kicad.org/) EDA.
 
 ### Ordering the boards
 
-You can order the board for this project at [PCBWay](https://www.pcbway.com/project/shareproject/PLACEHOLDER) and support me or download 
+You can order the board for this project at [PCBWay](https://www.pcbway.com/project/shareproject/NoCIC_Replacement_NES_CIC_8e238847.html) and support me or download 
 the gerbers and have them printed wherever you like!!!
