@@ -47,3 +47,8 @@ The board was designed with [KiCad](https://kicad.org/) EDA.
 
 You can order the board for this project at [PCBWay](https://www.pcbway.com/project/shareproject/NoCIC_Replacement_NES_CIC_8e238847.html) and support me or download 
 the gerbers and have them printed wherever you like!!!
+
+## TODO
+
+- [Some carts](https://forums.nesdev.org/viewtopic.php?t=19280) seems to depend on the CIC-RST signal to be connected to work. Bridge the 555 output (pin 3) to pin 10 to provide the active-high reset?
+- There are some "[reports](https://consolemods.org/wiki/NES:Disabling_CIC_Chip)" of overheating for games that attempt to glitch the CIC with voltage spikes if the CIC is not there. Add load resistors between pin 1/2 and GND?
