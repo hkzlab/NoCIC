@@ -1152,6 +1152,156 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Jumper:Jumper_2_Small_Open"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at 0 2.794 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Jumper_2_Small_Open"
+				(at 0 -2.286 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Jumper, 2-pole, small symbol, open"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Jumper SPST"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Jumper_2_Small_Open_0_0"
+				(circle
+					(center -1.016 0)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.016 0)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Small_Open_0_1"
+				(arc
+					(start -0.762 1.0196)
+					(mid 0 1.2729)
+					(end 0.762 1.0196)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Small_Open_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.27)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.27)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Timer:LMC555xM"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1639,6 +1789,12 @@
 		(uuid "3634d41d-b129-42cd-a6f5-b4aa3c7ed35b")
 	)
 	(junction
+		(at 202.565 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "39588f5e-e8d7-426d-bdac-374284986519")
+	)
+	(junction
 		(at 127 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1727,10 +1883,6 @@
 		(uuid "2cb3a651-46ad-470e-8417-8ecae7dbcd61")
 	)
 	(no_connect
-		(at 50.8 50.8)
-		(uuid "50a73d60-cce9-4001-9ddf-badb95ec4d02")
-	)
-	(no_connect
 		(at 50.8 45.72)
 		(uuid "6ff780ec-92f6-4e4e-8e8e-5737100dd3a4")
 	)
@@ -1777,6 +1929,16 @@
 			(type default)
 		)
 		(uuid "091d6ee5-238e-43ef-83ef-8c57114b97c4")
+	)
+	(wire
+		(pts
+			(xy 226.695 102.87) (xy 202.565 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0cc7a838-927f-4275-a7a4-0d34e1ed835b")
 	)
 	(wire
 		(pts
@@ -1870,6 +2032,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.775 102.87) (xy 250.825 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d3923c7-5056-4e2d-9d01-702172209463")
+	)
+	(wire
+		(pts
 			(xy 193.04 140.97) (xy 193.04 132.08)
 		)
 		(stroke
@@ -1950,6 +2122,16 @@
 	)
 	(wire
 		(pts
+			(xy 50.8 50.8) (xy 63.5 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68af06b7-1546-4693-9582-a41aa6d6182f")
+	)
+	(wire
+		(pts
 			(xy 87.63 140.97) (xy 115.57 140.97)
 		)
 		(stroke
@@ -1960,7 +2142,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 120.65) (xy 205.74 120.65)
+			(xy 168.91 120.65) (xy 202.565 120.65)
 		)
 		(stroke
 			(width 0)
@@ -2027,6 +2209,16 @@
 			(type default)
 		)
 		(uuid "7916a0c5-e1d8-4495-985c-d6ec22893130")
+	)
+	(wire
+		(pts
+			(xy 202.565 120.65) (xy 205.74 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f0cc9a2-5313-4c69-9aa5-718bd06fc1a8")
 	)
 	(wire
 		(pts
@@ -2180,6 +2372,16 @@
 	)
 	(wire
 		(pts
+			(xy 202.565 102.87) (xy 202.565 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bab19fde-dba6-40c8-b2b1-525ea15ebfa8")
+	)
+	(wire
+		(pts
 			(xy 135.89 95.25) (xy 156.21 95.25)
 		)
 		(stroke
@@ -2327,6 +2529,26 @@
 			(justify right bottom)
 		)
 		(uuid "11c45168-e92a-4536-959b-3afe22491ba0")
+	)
+	(label "CIC-RST"
+		(at 63.5 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "98855f8f-715a-4b63-b78e-cce1f7e2d361")
+	)
+	(label "CIC-RST"
+		(at 250.825 102.87 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bd4b25bf-763c-4bcf-b328-31382aee270f")
 	)
 	(label "RESET_IN"
 		(at 25.4 50.8 0)
@@ -3248,6 +3470,74 @@
 			(project "NoCIC"
 				(path "/bc4110f2-4ee2-488e-820f-9ed5410de9d6"
 					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:Jumper_2_Small_Open")
+		(at 229.235 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c9c48824-8533-417a-9451-9a88653d36d0")
+		(property "Reference" "JP1"
+			(at 229.235 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CIC-RESET Enabled"
+			(at 229.235 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 229.235 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 229.235 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Jumper, 2-pole, small symbol, open"
+			(at 229.235 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3f6c62cd-0a8d-4879-8130-f9fb4b1224a7")
+		)
+		(pin "2"
+			(uuid "8c2c5b1e-be98-4b57-8a8a-18d82cd63e54")
+		)
+		(instances
+			(project ""
+				(path "/bc4110f2-4ee2-488e-820f-9ed5410de9d6"
+					(reference "JP1")
 					(unit 1)
 				)
 			)
