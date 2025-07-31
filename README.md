@@ -6,6 +6,18 @@ Any use of this project is **under your own responsibility**.
 You will be responsible of checking the correct construction and functionality of your board.
 By using this project You will agree that I cannot be held responsible if it will destroy any of your devices, damage your computer, burn down your house or whatever.
 
+### Sponsorship
+
+![PCBWay_logo](pics/pcbway_logo.png)
+
+This project is kindly sponsored by [PCBWay](https://pcbway.com).
+PCBWay specializes in manufacturing high-quality PCBs and makes them affordable to hobbyist and professionals alike.
+
+The range of services they offer include PCB prototyping, assembly, instant quotes for your order, a verification process by a team
+of experts and an easy to use, hassle-free order process.
+
+I'm grateful to PCBWay for the help in evolving and testing this project. You can order the currently released revisions of the board from them, see the link below!
+
 ## Introduction
 
 This is a replacement of the NES CIC IC that implements the reset functionality, fits in a DIP16 footprint and... nothing else.
