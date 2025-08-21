@@ -22,6 +22,8 @@ I'm grateful to PCBWay for the help in evolving and testing this project. You ca
 
 This is a replacement of the NES CIC IC that implements the reset functionality, fits in a DIP16 footprint and... nothing else.
 
+![Rev. 2 compared with a real CIC](pics/rev2_compared.jpg)
+
 The [NullCIC](https://github.com/Redherring32/NullCIC/) already does this, but I faced some issues with it where the NES sometimes failed to startup properly during
 a cold boot, and required a manual reset (possibly related to timing of my specific motherboard, even though the issues were not present with an original CIC installed).
 
@@ -30,8 +32,7 @@ a bit more reliably, and went with a classic 555 circuit.
 
 The values for the components in the BOM should provide around 500ms of time in reset at startup.
 
-![Rev. 1 render](pics/board_render.jpg)
-![Rev. 0 assembled](pics/rev0_assembled.jpg)
+![Rev. 2 assembled](pics/rev2_assembled.jpg)
 
 This board was tested with two of my NES units without issues, let me know if it works for you!
 
@@ -53,7 +54,10 @@ The board was designed with [KiCad](https://kicad.org/) EDA.
 | R1                     |  1  | 10K / 0805                                              |                                                                      |
 | R2                     |  1  | 1M / 0805                                               |                                                                      |
 | R3                     |  1  | 47K / 0805                                              |                                                                      |
+| R4, R5                 |  2  | 2K ~ 10K / 0805                                         | Optional pull-downs for DI and DO, in case a fake CIC in the cart attempts to glitch us with spikes                  |
 | J1                     |  2  | 8pin machined headers, 2.54mm pitch                     | Mount on the underside                                               |
+
+JP1 can be optionally jumpered to allow the 555 to reset the CIC in the cart.
 
 ### Ordering the boards
 
@@ -62,5 +66,4 @@ the gerbers and have them printed wherever you like!!!
 
 ## TODO
 
-- [Some carts](https://forums.nesdev.org/viewtopic.php?t=19280) seems to depend on the CIC-RST signal to be connected to work. Bridge the 555 output (pin 3) to pin 10 to provide the active-high reset?
-- There are some "[reports](https://consolemods.org/wiki/NES:Disabling_CIC_Chip)" of overheating for games that attempt to glitch the CIC with voltage spikes if the CIC is not there. Add load resistors between pin 1/2 and GND?
+- There are some "[reports](https://consolemods.org/wiki/NES:Disabling_CIC_Chip)" of overheating for games that attempt to glitch the CIC with voltage spikes if the CIC is not there. Find a way to test this with those games?
